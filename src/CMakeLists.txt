@@ -1,6 +1,6 @@
 project(main)   # 项目名称
 
-# 添加两个子目录
+# 添加两个子目录(子目录下的CMakeList.txt)
 add_subdirectory(pnc_map)
 add_subdirectory(process)
 add_subdirectory(show_result)

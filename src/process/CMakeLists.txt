@@ -2,8 +2,8 @@ project(process)
 
 # 将process.cpp 添加为动态库；动态库名称 ${PROJECT_NAME} process
 add_library(${PROJECT_NAME}
-    SHARED
-    process.cpp # 目前只有一个.cpp 文件，就这样写了
+SHARED
+process.cpp # 目前只有一个.cpp 文件，就这样写了
 )
 
 # 指定这个动态库包含的目录
@@ -17,6 +17,7 @@ PUBLIC
 pnc_map # 动态库
 )
 
+# 通过 find_package 找到第三方库 Eigen3，并直接链接它，因为 Eigen3::Eigen 已经包含了所有必要的信息
 target_link_libraries(${PROJECT_NAME}
 PUBLIC
 Eigen3::Eigen

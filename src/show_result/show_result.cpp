@@ -1,6 +1,7 @@
 #include <iostream>
 #include "show_result.h"
 #include <graphics.h>
+#include <easyx.h>     // 这个可加可不加？
 
 using std::cout, std::endl;
 
